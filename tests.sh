@@ -39,7 +39,7 @@ do
 	# measure the first time
 	t1=$(date +%s%3N)
 	# measure the second time
-	./client 52.88.191.178 a a cat tpTest > expOut
+	./client 18.219.163.32 a a cat tpTest > expOut
 	# measure the second time
 	t2=$(date +%s%3N)
 	# calculate the time used
@@ -70,7 +70,7 @@ do
 		# measure the first time
 		t1=$(date +%s%3N)
 		# run client and redirect the output message to a file
-		./client 52.88.191.178 a a cat testFile$i > expOut
+		./client 18.219.163.32 a a cat testFile$i > expOut
 		# measure the second time
 		t2=$(date +%s%3N)
 		# calculate the time used
