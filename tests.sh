@@ -113,4 +113,4 @@ do
 done
 
 
-./removeFile.sh
+./removeFiles.sh
