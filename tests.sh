@@ -31,15 +31,15 @@ echo "average connection - tear down time is " $((ctTotalTime/20)) " millisecond
 # calculate the throughput
 tpTotalTime=0
 # print the size of the file
-filesize=$(du -sb tpTest | cut -f1)
-echo "Size of tpTest is $filesize bytes"
+filesize=$(du -sb throughputTest | cut -f1)
+echo "Size of throughputTest is $filesize bytes"
 # Use cat command to get content for a 10MB file 20 times
 for i in {1..10}
 do
 	# measure the first time
 	t1=$(date +%s%3N)
 	# measure the second time
-	./client 18.219.163.32 a a cat tpTest > expOut
+	./client 18.219.163.32 a a cat throughputTest > expOut
 	# measure the second time
 	t2=$(date +%s%3N)
 	# calculate the time used
