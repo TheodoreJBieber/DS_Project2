@@ -1,3 +1,7 @@
+# Theodore Bieber
+# Distributed Systems
+# Project 2
+
 all: client server
 
 client: client.c
